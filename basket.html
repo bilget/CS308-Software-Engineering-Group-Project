@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="robots" content="all,follow">
+    <meta name="googlebot" content="index,follow,snippet,archive">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Obaju e-commerce template">
+    <meta name="author" content="Ondrej Svestka | ondrejsvestka.cz">
+    <meta name="keywords" content="">
+
+    <title>
+        TOYZZ STORE -- CART
+    </title>
+
+    <meta name="keywords" content="">
+
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+
+    <!-- styles -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <!-- theme stylesheet -->
+    <link href="css/style.default.css" rel="stylesheet" id="theme-stylesheet">
+
+    <!-- your stylesheet with modifications -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <script src="js/respond.min.js"></script>
+
+    <link rel="shortcut icon" href="favicon.png">
+
+    <style>
+        #result{
+            position: fixed;
+            width: 100%;
+            max-width: 470px;
+            cursor: pointer;
+            overflow-y: auto;
+            max-height: 200px;
+            z-index: 2000;
+        }
+        .link-class:hover{
+            background-color: #f1f1f1;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+    <!-- *** TOPBAR ***
+ _________________________________________________________ -->
+    <div id="top">
+        <div class="container">
+            <div class="col-md-6 offer" data-animate="fadeInDown">
+                <a href="index.html" class="btn btn-success btn-sm" data-animate-hover="shake">Offer of the day</a><a href="index.html"> Free shipping -- Click to go shopping</a>
+            </div>
+            <div class="col-md-6" data-animate="fadeInDown">
+               <ul id="menu" class="menu">
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="Login" aria-hidden="true">
+            <<div class="modal-dialog modal-sm">
+
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" id="Login">Customer login</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form method="post">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="loginmail" placeholder="email">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" id="loginpass" placeholder="password">
+                            </div>
+
+                            <p class="text-center">
+                                <button id="loginbtn" class="btn btn-primary"><i class="fa fa-sign-in"></i> Log in</button>
+                            </p>
+
+                        </form>
+
+                        <p class="text-center text-muted">Not registered yet?</p>
+                        <p class="text-center text-muted"><a href="register.html"><strong>Register now</strong></a>! It is easy and done in 1&nbsp;minute and gives you access to special discounts and much more!</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- *** TOP BAR END *** -->
+
+    <!-- *** NAVBAR ***
+ _________________________________________________________ -->
+
+    <div class="navbar navbar-default yamm" role="navigation" id="navbar">
+        <div class="container">
+            <div class="navbar-header">
+
+                <a class="navbar-brand home" href="index.html" data-animate-hover="bounce">
+                    <img src="img/logox.png" alt="Obaju logo" class="hidden-xs">
+                    <img src="img/logox.png" alt="Obaju logo" class="visible-xs"><span class="sr-only">TOYZZ - Go to home page</span>
+                </a>
+                <div class="navbar-buttons">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#search">
+                        <span class="sr-only">Toggle search</span>
+                        <i class="fa fa-search"></i>
+                    </button>
+                    <a class="btn btn-default navbar-toggle" href="basket.html">
+                        <i class="fa fa-shopping-cart"></i>  <span class="hidden-xs">CART</span>
+                    </a>
+                </div>
+            </div>
+            <!--/.navbar-header -->
+
+            <div class="navbar-collapse collapse" id="navigation">
+
+                 <ul class="nav navbar-nav navbar-left">
+                    <li class=""><a href="index.html">Home</a>
+                    </li>
+                    <li class=""><a href="category.html">TOYZZ</a>
+                    </li>
+                    <li class="dropdown yamm-fw">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-delay="200">CATEGORIES<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <div class="yamm-content">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <h5><a href="category.html?id=6">Action Figures</a></h5>
+                                            <ul>
+                                                <li><a href="category.html?id=11">Lord of the Rings</a>
+                                                </li>
+                                                <li><a href="category.html?id=12">Harry Potter</a>
+                                                </li>
+                                                <li><a href="category.html?id=13">Game of Thrones</a>
+                                                </li>
+                                                <li><a href="category.html?id=14">Star Wars</a>
+                                                </li>
+                                                <li><a href="category.html?id=16">Doctor Who</a>
+                                                </li>
+                                                <li><a href="category.html?id=18">Witcher</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h5><a href="category.html?id=10">Pop Figures</a></h5>
+                                            <ul>
+                                                <li><a href="category.html?id=15">Rick and Morty</a>
+                                                </li>
+                                                <li><a href="category.html?id=18">Witcher</a>
+                                                </li>
+                                                <li><a href="category.html?id=19">Overwatch</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h5><a href="category.html?id=9">Stuffed Toys</a></h5>
+                                            <ul>
+                                                <li><a href="category.html?id=14">Star Wars</a>
+                                                </li>
+                                                <li><a href="category.html?id=17">Elder Scrolls</a>
+                                                </li>
+                                                <li><a href="category.html?id=18">Witcher</a>
+                                                </li>
+                                                <li><a href="category.html?id=20">Pokemon</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-3">
+                                            <h5><a href="category.html?id=7">Puzzles</a></h5>
+                                            <ul>
+                                                <li><a href="category.html?id=11">Lord of the Rings</a>
+                                                </li>
+                                                <li><a href="category.html?id=12">Harry Potter</a>
+                                                </li>
+                                                <li><a href="category.html?id=13">Game of Thrones</a>
+                                                </li>
+                                                <li><a href="category.html?id=14">Star Wars</a>
+                                                </li>
+                                                <li><a href="category.html?id=18">Witcher</a>
+                                                </li>
+                                            </ul>
+                                            <h5><a href="category.html?id=8">LEGO</a></h5>
+                                            <ul>
+                                                <li><a href="category.html?id=14">Star Wars</a>
+                                                </li>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.yamm-content -->
+                            </li>
+                        </ul>
+                    </li>                    
+                </ul>
+
+            </div>
+            <!--/.nav-collapse -->
+
+            <div class="navbar-buttons">
+
+                <div class="navbar-collapse collapse right" id="basket-overview">
+                    <a href="basket.html" class="btn btn-primary navbar-btn"><i class="fa fa-shopping-cart"></i><span class="hidden-sm">CART</span></a>
+                </div>
+                <!--/.nav-collapse -->
+
+                <div class="navbar-collapse collapse right" id="search-not-mobile">
+                    <button type="button" class="btn navbar-btn btn-primary" data-toggle="collapse" data-target="#search">
+                        <span class="sr-only">Toggle search</span>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+            </div>
+
+            <div class="collapse clearfix" id="search">
+                <form class="navbar-form" role="search">
+                    <div class="input-group">
+                        <input id="searchBar" type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+                        </span>
+                    </div>
+                    <ul class="list-group" id="result"></ul>
+                </form>
+
+            </div>
+            <!--/.nav-collapse -->
+
+        </div>
+        <!-- /.container -->
+    </div>
+    <!-- /#navbar -->
+
+    <!-- *** NAVBAR END *** -->
+
+    <div id="all">
+
+        <div id="content">
+            <div class="container">
+
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="index.html">Home</a>
+                        </li>
+                        <li>Shopping cart</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-9" id="basket">
+
+                    <div class="box">
+
+                        <form method="post">
+
+                            <h1>Shopping cart</h1>
+                            <div id="cart">
+                            </div>
+                            
+                            <!-- /.table-responsive -->
+
+                            <div class="box-footer">
+                                <div class="pull-left">
+                                    <a href="category.html" class="btn btn-default"><i class="fa fa-chevron-left"></i> Continue shopping</a>
+                                </div>
+                                <div class="pull-right">
+                                    <button class="btn btn-default"><i class="fa fa-refresh"></i> Update basket</button>
+                                    <button type="submit" class="btn btn-primary" >
+                                        <a href="checkout1.html" style="color: white;">Proceed to checkout <i class="fa fa-chevron-right"></i></a>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <!-- /.box -->
+
+
+                    <div class="row same-height-row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="box same-height">
+                                <h3>You may also like these products</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product same-height">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/product2.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/product2_2.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/product2.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3>Fur coat</h3>
+                                    <p class="price">$143</p>
+                                </div>
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product same-height">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/product1.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/product1_2.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/product1.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3>Fur coat</h3>
+                                    <p class="price">$143</p>
+                                </div>
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+
+                        <div class="col-md-3 col-sm-6">
+                            <div class="product same-height">
+                                <div class="flip-container">
+                                    <div class="flipper">
+                                        <div class="front">
+                                            <a href="detail.html">
+                                                <img src="img/product3.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                        <div class="back">
+                                            <a href="detail.html">
+                                                <img src="img/product3_2.jpg" alt="" class="img-responsive">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="detail.html" class="invisible">
+                                    <img src="img/product3.jpg" alt="" class="img-responsive">
+                                </a>
+                                <div class="text">
+                                    <h3>Fur coat</h3>
+                                    <p class="price">$143</p>
+
+                                </div>
+                            </div>
+                            <!-- /.product -->
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- /.col-md-9 -->
+
+                <div class="col-md-3">
+                    <div class="box" id="order-summary">
+                        <div class="box-header">
+                            <h3>Order summary</h3>
+                        </div>
+                        <p class="text-muted">Shipping and additional costs are calculated based on the values you have entered.</p>
+
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>Order subtotal</td>
+                                        <th id="total_pro"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping and handling</td>
+                                        <th id="ship"></th>
+                                    </tr>
+                                    <tr>
+                                        <td>KDV</td>
+                                        <th id="tax"></th>
+                                    </tr>
+                                    <tr class="total">
+                                        <td>Total</td>
+                                        <th id="total_all"></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                    <div class="box">
+                        <div class="box-header">
+                            <h4>Coupon code</h4>
+                        </div>
+                        <p class="text-muted">If you have a coupon code, please enter it in the box below.</p>
+                        <form>
+                            <div class="input-group">
+
+                                <input type="text" class="form-control">
+
+                                <span class="input-group-btn">
+
+					<button class="btn btn-primary" type="button"><i class="fa fa-gift"></i></button>
+
+				    </span>
+                            </div>
+                            <!-- /input-group -->
+                        </form>
+                    </div>
+
+                </div>
+                <!-- /.col-md-3 -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#content -->
+        <!-- *** FOOTER ***
+ _________________________________________________________ -->
+        <div id="footer" data-animate="fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Pages</h4>
+
+                        <ul>
+                            <li><a href="text.html">About us</a>
+                            </li>
+                            <li><a href="faq.html">FAQ</a>
+                            </li>
+                            <li><a href="contact.html">Contact us</a>
+                            </li>
+                        </ul>
+
+                        <hr>
+
+                        <h4>User section</h4>
+
+                        <ul>
+                            <li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a>
+                            </li>
+                            <li><a href="register.html">Register</a>
+                            </li>
+                        </ul>
+
+                        <hr class="hidden-md hidden-lg hidden-sm">
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <div class="col-md-3 col-sm-6">
+
+                        <h4>Top categories</h4>
+
+                        <h5>Figures</h5>
+
+                        <ul>
+                            <li><a href="category.html?id=6">Action Figures</a>
+                            </li>
+                            <li><a href="category.html?id=10">Pop Figures</a>
+                            </li>
+                            <li><a href="category.html?id=9">Stuffed Toys</a>
+                            </li>
+                        </ul>
+
+                        <h5>Jigsaws</h5>
+                        <ul>
+                            <li><a href="category.html?id=8">LEGO</a>
+                            </li>
+                            <li><a href="category.html?id=7">Puzzles</a>
+                            </li>
+                        </ul>
+
+                        <hr class="hidden-md hidden-lg">
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                    <div class="col-md-3 col-sm-6">
+
+                        <h4>Where to find us</h4>
+
+                        <p><strong>Toyzz Store Inc.</strong>
+                            <br>Sabanci University
+                            <br>Orta Distinct, Üniversite Avenue
+                            <br>34956 
+                            <br>ISTANBUL
+                            <br>
+                            <strong>TURKEY</strong>
+                        </p>
+
+                        <a href="contact.html">Go to contact page</a>
+
+                        <hr class="hidden-md hidden-lg">
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+
+
+                    <div class="col-md-3 col-sm-6">
+
+                        <h4>Stay in touch</h4>
+
+                        <p class="social">
+                            <a href="https://www.facebook.com/" class="facebook external" data-animate-hover="shake"><i class="fa fa-facebook"></i></a>
+                            <a href="https://twitter.com/?lang=en" class="twitter external" data-animate-hover="shake"><i class="fa fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/?hl=en" class="instagram external" data-animate-hover="shake"><i class="fa fa-instagram"></i></a>
+                            <a href="https://plus.google.com/" class="gplus external" data-animate-hover="shake"><i class="fa fa-google-plus"></i></a>
+                            <a href="info@toyzz.store" class="email external" data-animate-hover="shake"><i class="fa fa-envelope"></i></a>
+                        </p>
+
+
+                    </div>
+                    <!-- /.col-md-3 -->
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /#footer -->
+
+        <!-- *** FOOTER END *** -->
+
+
+
+
+        <!-- *** COPYRIGHT ***
+ _________________________________________________________ -->
+        <div id="copyright">
+            <div class="container">
+                <div class="col-md-6">
+                    <p class="pull-left">© 2018 Toyzz Store.</p>
+
+                </div>
+                <div class="col-md-6">
+                    <p class="pull-right">Template by <a href="https://bootstrapious.com/e-commerce-templates">Bootstrapious</a> & <a href="https://fity.cz">Fity</a>
+                         <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) If you want to use the template without the attribution links, you can do so after supporting further themes development at https://bootstrapious.com/donate  -->
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- *** COPYRIGHT END *** -->
+
+
+
+    </div>
+    <!-- /#all -->
+
+
+    
+
+    <!-- *** SCRIPTS TO INCLUDE ***
+ _________________________________________________________ -->
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap-hover-dropdown.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/front.js"></script>
+
+    <script type="text/javascript">
+        $(function () {
+            $.ajax({
+                url: 'http://toyzz.store:3000/api/user/type',
+                headers: {
+                  'Authorization': sessionStorage.getItem('token')
+                },
+                dataType: 'json',
+                type:"GET",
+                cache: false,
+                success: function(data) {
+                    if(data.length == 2) {
+                        sessionStorage.setItem('utype', data[1]);
+                    }
+                    else {
+                        sessionStorage.setItem('utype', data[0]);
+                    }
+                    
+                },
+                error: function(xhr, status) {
+                     console.log(status);
+                }
+            });
+        })
+        var type = sessionStorage.getItem('utype');
+        var token = sessionStorage.getItem('token');
+        if(token == null) {
+            $('#menu').append('<li><a href="#" data-toggle="modal" data-target="#login-modal">Login</a></li><li><a href="register.html">Register</a></li><li><a href="contact.html">Contact</a></li><li><a href="text.html">About Us</a></li><li><a href="faq.html">FAQ</a></li>');
+        }
+        else {
+            if(type == 'Sales') {
+                $('#menu').append('<li><a href="customer-account.html">My Account</a></li><li><a href="contact.html">Contact</a></li><li><a href="text.html">About Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="salesmanager.html">Sales Management</a></li><li><a id="log_out" href="index.html">LOG OUT</a></li>');
+            }
+            else if(type == 'Customer') {
+                $('#menu').append('<li><a href="customer-account.html">My Account</a></li><li><a href="contact.html">Contact</a></li><li><a href="text.html">About Us</a></li><li><a href="faq.html">FAQ</a></li><li><a id="log_out" href="index.html">LOG OUT</a></li>');
+            }
+            else {
+                $('#menu').append('<li><a href="customer-account.html">My Account</a></li><li><a href="contact.html">Contact</a></li><li><a href="text.html">About Us</a></li><li><a href="faq.html">FAQ</a></li><li><a href="productmanager.html">Product Management</a></li><li><a id="log_out" href="index.html">LOG OUT</a></li>');
+            }
+            
+        }
+
+        $('#log_out').on('click', function(e) {
+            sessionStorage.clear();
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+
+            Response.Cache.SetExpires(DateTime.UtcNow.AddHours(-1)); Response.Cache.SetNoStore();
+        })
+        
+       $('#loginbtn').on('click', function (e) {
+            e.preventDefault();
+                var jsonData = {
+                email: $('#loginmail').val(),
+                password: $('#loginpass').val()
+            };
+            $.ajax({
+                  url: 'http://toyzz.store:3000/api/authenticate',
+                  content_type: 'application/json',
+                  dataType: 'json',
+                  crossDomain: true,
+                  data: jsonData,
+                  type: "POST",
+
+                  //cache: false,
+                  success: function (data) {
+                        sessionStorage.setItem('token', data.auth_token);
+                        alert(data.auth_token);
+                        window.location.href = "customer-account.html";
+                  },
+                  error: function(xhr, status){
+                        console.log(status);
+                        alert("Wrong information!Try again.");
+                      }
+                });
+        })
+
+       $(function () {
+            $.ajax({
+                url: 'http://toyzz.store:3000/api/order/show',
+                headers: {
+                    'Authorization': sessionStorage.getItem('token')
+                },
+                dataType: 'json',
+                //crossDomain: true,
+                success: function (data) {
+                    var itemList = data.items;
+                    var count = itemList.length;
+                    var htmlStr = '';
+                    var str ='<p class="text-muted">You currently have ' + count + ' item(s) in your cart.</p><div class="table-responsive"><table class="table"><thead><tr><th colspan="2">Product</th><th>Quantity</th><th>Unit price</th><th>Discount</th><th colspan="2">Total</th></tr></thead>'
+                    for(var index = 0; index < count; index++)
+                    {
+                        var s = '<tbody><tr><td><a href="detail.html?id=' + itemList[index].product.id + '"><img src="img/detailsquare.png" alt="White Blouse Armani"></a></td><td><a href="detail.html?id=' + itemList[index].product.id + '">' + itemList[index].product.name + '</a></td><td><input type="text" class="update" data-id="'+ itemList[index].id +'" value="'+ itemList[index].quantity + '" class="form-control"></td><td>' + itemList[index].product.price + 'TL' + '</td><td>0.00 TL</td><td id="'+ itemList[index].id+'">' + (itemList[index].quantity)*(itemList[index].product.price) + 'TL' + '</td><td><a class="deletebutton" data-id="'+ itemList[index].id+'"><i class="fa fa-trash-o"></i></a></td></tr></tbody>';
+                        htmlStr = htmlStr + s; 
+                    }
+                    var str2 = '<tfoot><tr><th colspan="5">Total</th><th colspan="2" id="cart_total">' + data.total_price + 'TL' + '</th></tr></tfoot></table></div>';
+                    $('#cart').append(str + htmlStr + str2);
+
+                    $('#total_pro').append(data.total_price + 'TL');
+                    $('#ship').append('0 TL');
+                    $('#tax').append(((data.total_price)*18)/100 + 'TL')
+                    $('#total_all').append((data.total_price + 0 + (((data.total_price)*18)/100)) + 'TL');
+
+                    
+                    
+                    $('.deletebutton').on('click', function (e) {
+                        e.preventDefault();
+                        var el = $(this) 
+                        var id = $(this).data('id')
+                        
+                        $.ajax({
+                          url: "http://toyzz.store:3000/api/shoppingcart/remove/"+id,
+                          headers: {
+                            'Authorization': sessionStorage.getItem('token')
+                          },
+                          dataType: 'json',
+                          crossDomain: true,
+                          type: "DELETE",
+
+                          //cache: false,
+                          success: function (data) {
+
+                                alert(data.message);
+
+                                var minus = parseInt(el.parent().siblings()[5].innerHTML.split('TL')[0]);
+                                var total = parseInt($('#cart_total').text().split('TL')[0]) - minus;
+                                $('#cart_total').text(total.toString() + 'TL');
+
+                                $('#total_pro').text(total + 'TL');
+                                $('#tax').text(((total)*18)/100 + 'TL');
+                                $('#total_all').text((total + 10 + (((total)*18)/100)) + 'TL');
+
+                                el.parent().parent().remove()
+
+                          },
+                          error: function(xhr, status){
+                                console.log(status);
+                                alert("Wrong information!Try again.");
+                              }
+                        });
+
+                    })
+                    $('.form-control').on('click', function (e){
+                        var el = $(this)
+                        var id = $(this).data('id')
+                        var x =document.getElementById(id).value();
+                        alert(x);
+
+                    })
+                    $('.update').focusout(function() {
+                        var id = $(this).data('id')
+                        var jsondata = {
+                             "delivery_list":{
+                                    "quantity": parseInt($(this).val())
+                                }
+                        }
+                        $.ajax({
+                          url: "http://toyzz.store:3000/api/shoppingcart/update/"+id,
+                          headers: {
+                            'Authorization': sessionStorage.getItem('token')
+                          },
+                          dataType: 'json',
+                          data: jsondata,
+                          crossDomain: true,
+                          type: "PATCH",
+                          success: function(data) {
+                                window.location.href = "basket.html";
+                          },
+                          error: function(xhr, status) {
+                                console.log(status);
+                          }
+                        })
+                    });
+
+                },
+                error: function(xhr, status){
+                    console.log(status);
+//                  window.location.href = "index.html";
+                }
+            });
+        })
+        
+        $(function () {
+           $('#searchBar').keyup(function () {
+               $('#result').html('');
+               var searchField = $('#searchBar').val();
+               var expression = new RegExp(searchField, 'i');
+
+               $.getJSON('http://toyzz.store:3000/api/products/search', function (data) {
+
+                   $.each(data, function (key, value) {
+                       if(value.name.search(expression) != -1)
+                       {
+                           $('#result').append('<li class="list-group-item"><a href="detail.html?id=' + value.id + '" style="display: block;">' + value.name + '</a></li>')
+                       }
+                   })
+               })
+               
+           })
+        })
+
+    </script>
+
+
+
+</body>
+
+</html>
